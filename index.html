@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/estilosInfo.css">
+    <link rel="stylesheet" href="css/jquery.lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style-tabs.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    <script src="js/infografia.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <script type="text/javascript">
+    jQuery(function($) { 
+        $('.T2cont1').waypoint(function() {
+            $(this).addClass('bounceIn animated delay-1s');
+        },{
+            offset: '70%',
+            triggerOnce: true
+        }); 
+        $('.T2cont2').waypoint(function() {
+            $(this).addClass('fadeIn animated delay-4s');
+        },{
+            offset: '70%',
+            triggerOnce: true
+        });       
+    });
+    </script>
+
+    
+    
+</head>
+<body>
+  <div class="bienvenida" id="START">
+      <div class="imgBienvenida" id="START-IMG">
+          <div class="btnComenzar" id="BT-START"></div>
+      </div>
+  </div>
+   <div class="contenedor">
+        <div class="top">
+            <div class="nombreFranja">Participación política. Una apertura democrática para construir paz</div>
+            <div class="btns">
+                <div class="btnTop">
+                    <a href="media/00-Competencias.html" data-lightbox-gallery="iframe" class="lightbox">
+                        <img src="images/bt_competencias.svg">
+                    </a>
+                </div>
+                <div class="btnTop">
+                    <a href="anexos/U3_DC_AccionCaPaz.pdf" download="Unidad-3·DiplomadoAccionCaPaz.pdf">
+                        <img src="images/bt_pdf.svg">
+                    </a>
+                </div>
+                <div class="btnTop">
+                    <a href="anexos/Glosario.pdf" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;">
+                        <img src="images/bt_glosario.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="infografia">
+			
+           <div class="act1" id="SEC01">
+                <div class="secAct1">Actividad 1</div>
+                <div class="Act1-Titulo">¿Qué conozco de la apertura democrática dentro del proceso paz?</div>
+                <div class="Act1-Contenido">
+                    <p>Antes de iniciar la exploración de nuestro contenido, respondamos el cuestionario, con el fin de identificar cuanto conocemos sobre el tema de participación política.</p>
+                    <p style="margin: 0;">Revisemos el paso a paso:</p>
+                    <div class="btn-act1 animated pulse infinite" id="PDF-ACT1"><a href="anexos/Act01.pdf" download="Actividad1·Unidad-3.pdf"><img src="images/btn-act1.png"></a></div>
+                    
+                    <div class="acciones-act1">
+                        <ul>
+                            <li>Envíe el formulario al aula virtual en la actividad 1.</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           
+           <div class="tema1" id="SEC02">
+            <div class="Tema1-Titulo">Generalidades de la participación política</div>
+            	<div class="talks-T01">
+            		<div class="char01-T1" id="T1-CH01">El segundo punto que logró acordarse entre los representantes del Gobierno Nacional y de las Farc-EP, después de largas discusiones en la agenda de negociación de La Habana iniciadas en el mes de agosto del 2012, fue este de la participación política, el cual se dio a conocer públicamente el 6 de noviembre del 2013.</div>
+            		<div class="char02-T1" id="T1-CH02">Como se indicó en su momento por parte de la Oficina del Alto Comisionado para la Paz, el acuerdo logrado “busca fortalecer la participación de todos los colombianos en la política, los asuntos públicos y la construcción de la paz”.</div>
+            		<div class="char03-T1" id="T1-CH03">Sin embargo, antes de revisar los contenidos y finalidades de este segundo punto del Acuerdo de Paz, se debe tener claro qué significa la expresión participación política, pues así podremos entender el porqué de su inclusión en la agenda de negociación de La Habana.</div>
+            		<div class="char04-T1" id="T1-CH04">Revisemos el siguiente cuadro con una información muy importante:</div>
+            	</div>
+            	<div class="tabsT1" id="T1-TAB">
+            		<ul id="tabs">
+						<li><a href="#" title="tab1" id="T1B1">Concepto de Política</a></li>
+						<li><a href="#" title="tab2" id="T1B2">Participación política</a></li>
+						<li><a href="#" title="tab3" id="T1B3">Acciones de la participación ciudadana</a></li>
+					</ul>
+
+					<div id="contenTabs">
+						<div id="tab1">
+							<p>Debemos entonces partir del concepto de “política”, que la Real Academia Española de la Lengua ha definido como el “arte, doctrina u opinión referente al gobierno de los Estados” o como la “actividad de quienes rigen o aspiran a regir los asuntos públicos, o también como la “actividad del ciudadano cuando interviene en los asuntos públicos con su opinión, con su voto, o de cualquier otro modo”.</p>
+							<p>En todo caso, la política no es una teoría o un discurso, sino se trata de la “vida, actividad y acción” (Maldonado, 2007, p. 103), es decir, el “escenario donde es posible la convivencia entre seres diversos” (Vela, 2007, p. 11).</p>
+							<p class="nota">Diferentes acepciones o definiciones contenidas en el diccionario de la Lengua Española, disponible en: <a href="http://dle.rae.es/?id=Ta2HMYR" target="_blank">http://dle.rae.es/?id=Ta2HMYR</a>.</p>
+						</div>
+						
+						<div id="tab2">
+							<p>Conjunto de actividades, interacciones, comportamientos, acciones y actitudes que se dan al interior de una sociedad en forma individual o colectiva por parte de individuos, grupos, partidos e instituciones, las cuales van dirigidas a explicar, demandar, influir o tomar parte en el proceso de decisiones políticas. (Fernández, 1999, p. 2).</p>
+							<p>Otro concepto muy relacionado con la participación política  es el de la participación ciudadana, que se define por la propia Constitución Política de 1991 como un sistema que permite vigilar la gestión pública y los resultados de dicha gestión (Const., 1991, art. 270), participación que fue expresamente regulada por la Ley 134 de 1994, señalando como mecanismos o formas de participación ciudadana, los siguientes:</p>
+							<ul>
+								<li><i>Iniciativa popular legislativa</i>: posibilidad de presentar propuestas de ley.</li>
+								<li>Referendo: convocatoria al pueblo para que apruebe o no un proyecto de norma o derogue o no una norma ya vigente.</li>
+								<li><i>Consulta popular</i>: pregunta hecha al pueblo para que se pronuncie sobre su conveniencia y se hace sobre un tema de gran importancia nacional o local.</li>
+								<li><i>Revocatoria del mandato</i>: posibilidad de dar por terminado el mandato de un gobernador o alcalde.</li>
+								<li><i>Plebiscito</i>: pronunciamiento del pueblo convocado por el Presidente de la República para que apoye o rechace una determinada decisión.</li>
+								<li><i>Cabildo abierto</i>: reunión abierta del consejo municipal o la junta administradora local para discutir y participar sobre un asunto de interés de la comunidad.</li>
+								<li><i>Veedurías ciudadanas</i>: o juntas de vigilancia de la gestión pública.</li>
+							</ul>
+						</div>
+						
+						<div id="tab3">
+							<p>Algunas de las acciones que hacen parte de la participación política y ciudadana, se  sintetizan en la siguiente figura:</p>
+							<center>
+								<img src="images/T1-Grafica.png">
+								<p class="nota">Fuente: Elaboración propia a partir de información de la Oficina del Alto Comisionado para la Paz (2014).</p>
+							</center>
+						</div>
+					</div>
+            	</div>
+           </div>
+           
+           <div class="act2" id="SEC03">
+                <div class="secAct2">Actividad 2</div>
+                <div class="Act2-Titulo">Reconociendo la importancia de brindar derechos civiles y políticos para la participación activa en la vida política</div>
+                <div class="Act2-Contenido">
+                    <p>Observe el video <b>“Fortalecimiento de la participación política”</b></p>
+                    <a href="https://www.youtube.com/embed/qtEOIbp57-E" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/videoAct02.jpg" id="VIDACT2"></a>
+                    <div class="acciones-act2">
+                        <p>Responda las siguientes preguntas:</p>
+                        <ul>
+                        	<li>¿Qué fue lo que le impacto más del video?</li>
+                        	<li>¿Cuál es la propuesta principal del video?</li>
+                        	<li>Escriba su reflexión sobre el tema máximo en dos párrafos.</li>
+                        </ul>
+                        <p style="margin: 20px 0 0 15px;">Envíe sus respuestas a la plataforma</p>
+                    </div>
+                </div>
+           </div>
+           
+          
+           <div class="tema2" id="SEC04">
+               <div class="Tema2-Titulo">La importancia de la solución política a los conflictos armados</div>
+				
+          		<div class="talks1-T02">
+          			<div class="talk01-T02" id="T2-CH01">
+          				Aunque la Constitución Política de 1991 nos dio a los colombianos nuevas herramientas para fortalecer la democracia, como fueron los mecanismos de participación, también es cierto que dicha promesa de que los ciudadanos podamos tener acceso a una participación directa aún no se hace del todo una realidad.
+          				<div class="talk01a-T02" id="T2-CH01A">
+          					Revisemos el video del punto sobre participación Política:
+          					<a href="https://www.youtube.com/embed/7alKA-8LoJ8" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/video-T02.jpg" class="videos" id="VIDTEM2"></a>
+          				</div>
+          			</div>
+          			<div class="talk02-T02" id="T2-CH02">
+          				Por esto, las discusiones de La Habana en torno al tema de la participación política se cimentaron sobre tres pilares fundamentales. ¿Cuáles?, veamos:
+          			</div>
+          			
+          			<div class="pilares">
+          				<div class="pil01" id="P01"></div>
+          				<div class="pil02" id="P02"></div>
+          				<div class="pil03" id="P03"></div>
+          			</div>
+          		</div>
+          		
+          		<div class="talks2-T02">
+          			<div class="talk03-T02" id="T2-CH03">
+          				Los contenidos puntuales de cada pilar que fueron objeto de negociación entre Gobierno y las Farc-EP antes del acuerdo final, fueron en total diez puntos objeto de negociación para la ampliación y consolidación de una democracia como camino para tramitar los conflictos de manera pacífica, revisemos la siguiente tabla:
+          				<a href="anexos/T02-Tabla01.pdf" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/T2-Talk03-pdf.png" class="pdf01-T3" id="PDF1-T03"></a>
+          			</div>
+          			<div class="talk04-T02" id="T2-CH04">
+          				Veamos entonces cómo quedaron en el acuerdo final, los temas específicos de la participación política.
+          				<a href="anexos/T02-Tabla02.pdf" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/T2-Talk04-pdf.png" class="pdf02-T3" id="PDF2-T03"></a>
+          			</div>
+          		</div>
+          		
+          		<div class="popUps-t02" id="T2-POP">
+          			<p class="txt-T02">Aun cuando los contenidos de la tabla 2 son relevantes para el adecuado entendimiento del tema de la participación política, explicaremos de forma breve, el alcance de algunos de sus contenidos, entre otras razones por ser estos temas los que ya tienen algún desarrollo legal o reglamentario. Veamos la información de los recuadros haciendo clic sobre ellos:</p>
+          			
+          			<div class="menuT02" id="MENU-POP">
+          				<a href="media/T2-Cont01.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Btn01.png" id="T2B01" class="animated swing infinite"></a>
+          				<a href="media/T2-Cont02.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Btn02.png" id="T2B02" class="animated swing infinite"></a>
+          				<a href="media/T2-Cont03.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Btn03.png" id="T2B03" class="animated swing infinite"></a>
+          				<a href="media/T2-Cont04.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Btn04.png" id="T2B04" class="animated swing infinite"></a>
+          			</div>
+          		</div>
+           </div>
+           
+           <div class="act3" id="SEC05">
+                <div class="secAct3">Actividad 3</div>
+                <div class="Act3-Titulo">¿Qué conozco de la apertura democrática dentro del proceso paz?</div>
+                <div class="Act3-Contenido">
+                    <p>Para terminar, revisaremos cuanto hemos aprendido  sobre el tema de participación polí<tica class=""></tica></p>
+                    <p style="margin: 0;">Revisemos el paso a paso:</p>
+                    <div class="btn-act3 animated pulse infinite" id="PDF-ACT3"><a href="anexos/Act03.pdf" download="Actividad3·Unidad-3.pdf"><img src="images/btn-act1.png"></a></div>
+                    
+                    <div class="acciones-act3">
+                        <ul>
+                            <li>Envíe sus respuestas  en el botón actividades de la plataforma.</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           
+        </div>
+       
+        <div class="footer">
+            <a href="media/00-Creditos.html" data-lightbox-gallery="image" class="lightbox"><div class="cred">Créditos</div></a>
+        </div>
+   </div>
+</body>
+
+    <!-- SCRIPTS DE LA LIBRERIA DE LOS POP UP -->
+    <script>
+           $(document).ready(function(e) {
+                $('a[data-lightbox-gallery]').iLightbox({
+                    type: 'iframe', //'image', 'inline', 'ajax', 'iframe', 'swf' and 'html'
+                    loop: null,
+                    arrows: null,
+                    closeBtn: true,
+                    title: null,
+                    href: null,
+                    content: null,
+                    beforeShow: function(a, b){ },
+                    onShow: function(a, b){ },
+                    beforeClose: function(){ },
+                    afterClose: function(){ },
+                    onUpdate: function(a){ },
+                });
+           });
+    </script>
+
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Páginas</title>
+  
+  <link rel="stylesheet" href="css/stylesPages.css">
+  <link rel="stylesheet" href="css/estilos-cont.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+
+<script>
+/* when document is ready */
+$(function() {
+    /* initiate pugin assigning the desired button labels  */
+    $("div.holder").jPages({
+        containerID : "itemContainer",
+        perPage     : 1,
+        first       : false,
+        previous    : "span.arrowPrev",
+        next        : "span.arrowNext",
+        last        : false
+    });
+});
+</script>
+
+<style type="text/css">
+    body{
+        overflow: hidden;
+    }
+.holder {
+    display: none; 
+}
+.customBtns{
+    position: absolute;
+    z-index: 111;
+    width: 690px;
+    /* height: 50px; */
+    margin: 170px 0 0 0;
+}
+.arrowPrev, .arrowNext{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+}
+.arrowPrev{
+    background: url('images/arrowP.svg') no-repeat;
+    left: 0px;
+    z-index: 100;
+    width: 30px;
+    height: 40px;
+    margin: -50px 0 0 5px;
+}
+.arrowNext{
+    background: url(images/arrowN.svg) no-repeat;
+    right: 0px;
+    width: 30px;
+    height: 40px;
+    margin: -50px 5px 0 0px;
+}
+
+.arrowPrev.jp-disabled, .arrowNext.jp-disabled{
+    display: none;
+}
+.pgs{
+    width: 690px;
+    height: 400px;
+	background: url(images/fondo-solo.png) no-repeat;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container" class="clearfix">
+
+  <div id="content" class="defaults">
+
+   <!-- navigation holder -->
+    <div class="holder"></div>
+
+    <!-- wrapped custom buttons for easier styling -->
+    <div class="customBtns">
+      <span class="arrowPrev"></span>
+      <span class="arrowNext"></span>
+    </div>
+
+    <!-- item container -->
+    <div class="pgs">
+         <ul id="itemContainer">
+              <li>
+              	<p><b>GARANTÍAS A LA OPOSICIÓN</b></p>
+				<p>En la Constitución de 1991 se estableció en el artículo 112 la obligación de sacar adelante un “estatuto de la oposición” que después de 26 años y once intentos de expedición, no se había hecho realidad, ni siquiera durante las negociaciones del Gobierno y las Farc-EP.</p>
+				<p>Solo con posterioridad a la firma del Acuerdo de Paz y en el marco de su reglamentación, a través del procedimiento conocido como <i>fast track</i>, se expidió finalmente el estatuto de la oposición, a través de una ley estatutaria que no está en firme o vigente a la fecha<sup>1</sup>. Sin embargo, se resaltan los siguientes aspectos del texto del proyecto de ley estatutaria:</p>
+            	<div class="nota">Al día 10 de junio del 2017, fecha de terminación de la presente unidad, el proyecto de ley estatutaria se encontraba en sede de control automático de constitucionalidad ante la Corte Constitucional, razón por la cual no se suministró el número de la ley.</div>	 
+             </li>
+             <li>
+			 	 <p><b>1.</b> Consagra garantías para las organizaciones políticas que se declaren en oposición, con énfasis en las de comunidades indígenas y afrodescendientes, entre otros:</p>
+            	<ul class="listaVin">
+            		<li>• Derecho a obtener financiación.</li>
+            		<li>• Acceso a los medios de comunicación públicos y privados.</li>
+            		<li>• Acceso a la información y documentación oficial.</li>
+            		<li>• Derecho a réplica ante tergiversaciones de información o ataques públicos del gobierno nacional.</li>
+            		<li>• Participación en las mesas directivas de plenarias de corporaciones públicas.</li>
+            		<li>• Derecho a ejercer libremente sus derechos políticos.</li>
+            		<li>• Derecho a participar en la sesión exclusiva que discutirá la propuesta del plan de desarrollo.</li>
+            	</ul>
+             </li>
+              <li style="margin: 30px 0 0 0;">
+              	<p><b>2.</b> Consagra mecanismos para la exigibilidad de sus derechos, entre otros:</p>
+              	<ul class="listaVin">
+              		<li>• Acción judicial de protección para ejercer ante la autoridad electoral y que incluye la adopción de medidas cautelares para el restablecimiento de derechos vulnerados y de sanciones para quienes obstaculicen la realización efectiva de estos derechos.</li>
+              		<li>• Creación de la procuraduría delegada para la protección y supervisión de los derechos de la oposición.</li>
+              		<li>• Esquema de seguridad para directivos y miembros de la oposición en el marco del sistema integral de seguridad para el ejercicio de la política.</li>
+              	</ul>
+              </li>
+        </ul>
+    </div>
+
+  </div>
+  <!--! end of #content -->
+</div>
+<!--! end of #container -->
+
+
+</body>
+
+</html>

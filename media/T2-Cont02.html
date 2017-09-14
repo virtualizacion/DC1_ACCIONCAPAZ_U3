@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Páginas</title>
+  
+  <link rel="stylesheet" href="css/stylesPages.css">
+  <link rel="stylesheet" href="css/estilos-cont.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+
+<script>
+/* when document is ready */
+$(function() {
+    /* initiate pugin assigning the desired button labels  */
+    $("div.holder").jPages({
+        containerID : "itemContainer",
+        perPage     : 1,
+        first       : false,
+        previous    : "span.arrowPrev",
+        next        : "span.arrowNext",
+        last        : false
+    });
+});
+</script>
+
+<style type="text/css">
+    body{
+        overflow: hidden;
+    }
+.holder {
+    display: none; 
+}
+.customBtns{
+    position: absolute;
+    z-index: 111;
+    width: 690px;
+    /* height: 50px; */
+    margin: 170px 0 0 0;
+}
+.arrowPrev, .arrowNext{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+}
+.arrowPrev{
+    background: url('images/arrowP.svg') no-repeat;
+    left: 0px;
+    z-index: 100;
+    width: 30px;
+    height: 40px;
+    margin: -50px 0 0 5px;
+}
+.arrowNext{
+    background: url(images/arrowN.svg) no-repeat;
+    right: 0px;
+    width: 30px;
+    height: 40px;
+    margin: -50px 5px 0 0px;
+}
+
+.arrowPrev.jp-disabled, .arrowNext.jp-disabled{
+    display: none;
+}
+.pgs{
+    width: 690px;
+    height: 400px;
+	background: url(images/fondo-solo.png) no-repeat;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container" class="clearfix">
+
+  <div id="content" class="defaults">
+
+   <!-- navigation holder -->
+    <div class="holder"></div>
+
+    <!-- wrapped custom buttons for easier styling -->
+    <div class="customBtns">
+      <span class="arrowPrev"></span>
+      <span class="arrowNext"></span>
+    </div>
+
+    <!-- item container -->
+    <div class="pgs">
+         <ul id="itemContainer">
+              <li style="margin: 35px 0 0 0;">
+              	<p><b>GARANTÍAS DE SEGURIDAD</b></p>
+				<p>El Decreto-Ley 154 del 3 de febrero del 2017 crea la Comisión Nacional de Seguridad en el marco del Acuerdo Final, cuyo propósito es el diseño y seguimiento de la política criminal para el desmantelamiento de organizaciones o conductas responsables de homicidios y masacres que atenten contra los defensores de derechos humanos, movimientos sociales o políticos o personas que participen en la implementación de los acuerdos y la construcción de paz.</p>
+            	<p>Esta corta norma (solo ocho artículos) establece aspectos como la integración de la Comisión, sus funciones y la periodicidad de sus reuniones.</p>	 
+             </li>
+        </ul>
+    </div>
+
+  </div>
+  <!--! end of #content -->
+</div>
+<!--! end of #container -->
+
+
+</body>
+
+</html>

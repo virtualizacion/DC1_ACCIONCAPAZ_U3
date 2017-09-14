@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Páginas</title>
+  
+  <link rel="stylesheet" href="css/stylesPages.css">
+  <link rel="stylesheet" href="css/estilos-cont.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+
+<script>
+/* when document is ready */
+$(function() {
+    /* initiate pugin assigning the desired button labels  */
+    $("div.holder").jPages({
+        containerID : "itemContainer",
+        perPage     : 1,
+        first       : false,
+        previous    : "span.arrowPrev",
+        next        : "span.arrowNext",
+        last        : false
+    });
+});
+</script>
+
+<style type="text/css">
+    body{
+        overflow: hidden;
+    }
+.holder {
+    display: none; 
+}
+.customBtns{
+    position: absolute;
+    z-index: 111;
+    width: 690px;
+    /* height: 50px; */
+    margin: 170px 0 0 0;
+}
+.arrowPrev, .arrowNext{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+}
+.arrowPrev{
+    background: url('images/arrowP.svg') no-repeat;
+    left: 0px;
+    z-index: 100;
+    width: 30px;
+    height: 40px;
+    margin: -50px 0 0 5px;
+}
+.arrowNext{
+    background: url(images/arrowN.svg) no-repeat;
+    right: 0px;
+    width: 30px;
+    height: 40px;
+    margin: -50px 5px 0 0px;
+}
+
+.arrowPrev.jp-disabled, .arrowNext.jp-disabled{
+    display: none;
+}
+.pgs{
+    width: 690px;
+    height: 400px;
+	background: url(images/fondo-solo.png) no-repeat;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container" class="clearfix">
+
+  <div id="content" class="defaults">
+
+   <!-- navigation holder -->
+    <div class="holder"></div>
+
+    <!-- wrapped custom buttons for easier styling -->
+    <div class="customBtns">
+      <span class="arrowPrev"></span>
+      <span class="arrowNext"></span>
+    </div>
+
+    <!-- item container -->
+    <div class="pgs">
+         <ul id="itemContainer">
+              <li style="margin: 45px 0 0 0">
+              	<p><b>SEGURIDAD PARA EJERCER LA POLÍTICA</b></p>
+				<p>El 29 de mayo del 2017, el Presidente de la República, con la firma de varios ministros, expidió el Decreto-Ley 895, con el propósito de crear el Sistema Integral de Seguridad para el Ejercicio de la Política, cuya finalidad es la de fomentar una cultura de convivencia, tolerancia y solidaridad para el adecuado ejercicio de la política en el país, además de prevenir cualquier forma de estigmatización o persecución por ideales políticos.</p>
+            	<p>Esta norma desarrolla en diecinueve artículos, diversos aspectos del sistema, como son:</p>
+             </li>
+             <li style="margin: 35px 0 0 0;">
+            	<ul class="listaVin">
+            		<li>• Sus fines específicos.</li>
+            		<li>• Los elementos que lo conforman.</li>
+            		<li>• Las instancias, su integración y las funciones a cargo.</li>
+            		<li>• Los programas de:</li>
+            	</ul>
+            	<ul class="listLevel2">
+            		<li>- Protección integral para miembros del nuevo movimiento o partido de las Farc-EP.</li>
+            		<li>- Protección de las comunidades y organizaciones en los territorios.</li>
+            		<li>- Protección para miembros de organizaciones políticas que se declaren en oposición.</li>
+            		<li>- Promotores comunitarios de paz y convivencia.</li>
+            	</ul>
+            	<ul class="listaVin">
+            		<li>• La presunción de riesgo extraordinario.</li>
+            		<li>• El sistema de alertas tempranas.</li>
+            	</ul>
+             </li>
+        </ul>
+    </div>
+
+  </div>
+  <!--! end of #content -->
+</div>
+<!--! end of #container -->
+
+
+</body>
+
+</html>
